@@ -1,0 +1,4 @@
+kakao:
+  id : 210aaf5b574f67e81af3a7b82d8b8179
+  secret: Vxsa3zOdGwcMXUZugZWmbGWoexiqquPH
+  redirect_uri: http://localhost:5173/login/oauth2/callback/kakao
