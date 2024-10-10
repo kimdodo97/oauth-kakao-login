@@ -10,10 +10,10 @@ const KakaoLogin = (props) => {
     const kakaoLogin = async () => {
       await axios({
         method: "POST",
-        url: `http://localhost:8080/login/oauth2/callback/kakao?code=${code}`,
+        url: `http://localhost:8080/login/oauth2/kakao?code=${code}`,
         headers: {
           "Content-Type": "application/json;charset=utf-8", 
-          "Access-Control-Allow-Origin": "*", 
+          // "Access-Control-Allow-Orig in": "*", 
         },
       }).then((res) => { 
         console.log(res);

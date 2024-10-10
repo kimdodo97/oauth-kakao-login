@@ -1,10 +1,10 @@
-package com.example.backend.oauth;
+package com.example.backend.oauth.req;
 
 import lombok.Builder;
 import lombok.Getter;
 
 @Getter
-public class KakaoReq {
+public class TokenReq {
     private String grantType;
     private String clientId;
     private String redirectUri;
@@ -12,7 +12,7 @@ public class KakaoReq {
     private String clientSecret;
 
     @Builder
-    public KakaoReq(String grantType, String clientId, String redirectUri, String code, String clientSecret) {
+    public TokenReq(String grantType, String clientId, String redirectUri, String code, String clientSecret) {
         this.grantType = grantType;
         this.clientId = clientId;
         this.redirectUri = redirectUri;
